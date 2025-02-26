@@ -18,8 +18,6 @@ WORKDIR /app
 
 COPY --from=builder /app /app
 
-COPY entrypoint.sh /app/entrypoint.sh
-
 EXPOSE 8000
 
 ENTRYPOINT ["/app/entrypoint.sh"]
